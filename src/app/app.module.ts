@@ -20,6 +20,7 @@ import { SearchComponent } from './modules/search/search.component';
 import { LoginComponent } from './modules/login/login.component';
 import { CarComponent } from './modules/car/car.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
     MatCardModule,
     MatMenuModule,
     DefaultModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
