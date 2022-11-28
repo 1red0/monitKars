@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DefaultComponent } from './layouts/default/default.component';
 import { AccountComponent } from './modules/account/account.component';
+import { CarComponent } from './modules/car/car.component';
 import { DashboardComponent } from './modules/dashboard/dashboard.component';
 import { LoginComponent } from './modules/login/login.component';
 import { PostsComponent } from './modules/posts/posts.component';
@@ -11,7 +12,7 @@ import { SettingsComponent } from './modules/settings/settings.component';
 const routes: Routes = [
   { 
     path: '', 
-    title: 'Dashboard', 
+    title: 'monitKars', 
     component: DefaultComponent, 
     children: [{
       path: '', 
@@ -31,6 +32,9 @@ const routes: Routes = [
     }, {
       path: 'login', 
       component: LoginComponent
+    }, {
+      path: 'car',
+      component: CarComponent
     }
     
   ]

@@ -18,7 +18,8 @@ import { SettingsComponent } from './modules/settings/settings.component';
 import { AccountComponent } from './modules/account/account.component';
 import { SearchComponent } from './modules/search/search.component';
 import { LoginComponent } from './modules/login/login.component';
-
+import { CarComponent } from './modules/car/car.component';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { LoginComponent } from './modules/login/login.component';
     SettingsComponent,
     AccountComponent,
     SearchComponent,
-    LoginComponent
+    LoginComponent,
+    CarComponent
 
   ],
   imports: [
@@ -42,7 +44,8 @@ import { LoginComponent } from './modules/login/login.component';
     MatGridListModule,
     MatCardModule,
     MatMenuModule,
-    DefaultModule
+    DefaultModule,
+    MatSlideToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
